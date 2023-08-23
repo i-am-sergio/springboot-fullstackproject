@@ -10,5 +10,5 @@ public interface UsuarioDAO {
     UsuarioModel getUsuario(Long id);
     void eliminarUsuario(Long id);
     void registrarUsuario(UsuarioModel usuario);
-    boolean verificarCredenciales(UsuarioModel usuario);
+    UsuarioModel obtenerUsuarioPorCredenciales(UsuarioModel usuario);
 }
